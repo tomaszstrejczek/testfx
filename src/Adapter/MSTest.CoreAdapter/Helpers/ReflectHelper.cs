@@ -72,7 +72,7 @@ namespace Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.Helpers
         /// <returns>True if the specified attribute is defined on the type.</returns>
         public virtual bool IsAttributeDefined(Type type, Type attributeType, bool inherit)
         {
-            var mi = (MemberInfo) type.GetTypeInfo();
+            var mi = (MemberInfo)type.GetTypeInfo();
             return this.IsAttributeDefined(mi, attributeType, inherit);
         }
 
